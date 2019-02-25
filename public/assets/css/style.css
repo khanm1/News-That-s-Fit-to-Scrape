@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(197, 190, 157);
+    /* font-family: 'Source Code Pro',
+    monospace; */
+    font-family: 'Old Standard TT',
+    serif;
+    
+}
+
+#scrape {
+    margin-top: 7px;
+}
+
+.jumbotron {
+ font-size: 15px;
+ font-weight: bolder;
+
+}
+
+img {
+    padding: 10px;
+}
+
+h3 {
+    font-weight: bold;
+    padding: 5px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+li, ul {
+    color: white;
+}
+
+.navbar {
+    font-weight: bold;
+    
+    
+    
+}
+
+#navbar li, ul {
+    /* background-color: rgb(40, 100, 189); */
+    
+    font-weight: normal;
+        color: white;
+
+
+  
+}
+
+li {
+        color: white;
+}
+
+
+img {
+
+}
+
+.text-center {
+    background-color: rgb(219, 152, 152)
+}
+
+.panel {
+        background-color: rgb(165, 189, 224);
+
+}
+
+p {
+    color: black;
+}
