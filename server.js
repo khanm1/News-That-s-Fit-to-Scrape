@@ -176,12 +176,6 @@ app.post("/notes/articles/:id", function (req, res) {
 });
 
 
-
-
-
-
-
-
 // Route for getting all Articles from the db
 // output is JSON plain text
 app.get("/articles", function (req, res) {
