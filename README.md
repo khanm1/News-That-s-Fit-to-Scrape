@@ -33,3 +33,6 @@ Deployed on: `Heroku`
 - Nodejs
 - Mongo DB
 
+## Installation
+`News That's Fit to Scrape` can be downloaded by
+cloning from my Github repository: "https://github.com/khanm1/News-That-s-Fit-to-Scrape/"
