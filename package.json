@@ -1,7 +1,7 @@
 {
   "name": "News-That-s-Fit-to-Scrape",
   "version": "1.0.0",
-  "description": "`News That's Fit to Scrape` is an application that lets users scrape news articles from NPR.com. Users can then view and leave comments on saved articles. This app uses Cheerio to scrape news from NPR and stores them in MongoDB using Mongoose. Please Click on this [link]() to Check the App out.",
+  "description": "`News That's Fit to Scrape` is an application that lets users scrape news articles. Users can then view and leave comments on saved articles. This app uses Cheerio to scrape news from NPR and stores them in MongoDB using Mongoose. Please Click on this [link]() to Check the App out.",
   "main": "server.js",
   "dependencies": {
     "axios": "^0.18.0",
