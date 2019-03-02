@@ -4,9 +4,8 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var path = require("path");
 
-// Scraping tools
-var request = require("request");
-var cheerio = require("cheerio");
+
+
 
 // Require all models
 var db = require("./models");
@@ -29,7 +28,7 @@ var app = express();
 app.use(logger("dev"));
 // Use body-parser for handling form submissions
 app.use(bodyParser.urlencoded({
-  useNewUrlParser: true
+  extended: true
 }));
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public"));
@@ -38,12 +37,10 @@ var routers = require ("./controller/Routes.js")
 app.use(routers);
 
 // Handlebars
-var exphbs = require("express-handlebars");
+ 
 
-app.engine("handlebars", exphbs({
-  defaultLayout: "main",
-  partialsDir: path.join(__dirname, "/views/layouts/partials")
-}));
+var exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Connect to the Mongo DB
