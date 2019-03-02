@@ -8,8 +8,6 @@ app.get("/scrape", function (req, res) {
   request("http://freebeacon.com/columns/", function (error, response, html) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(html);
-// https://www.bostonglobe.com/
-// http://freebeacon.com/
     // Now, we grab every h2 within an article tag, and do the following:
     $("article").each(function (i, element) {
       // Save an empty result object
