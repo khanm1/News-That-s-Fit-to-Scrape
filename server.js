@@ -37,7 +37,7 @@ app.use(express.static("public"));
 var routers = require ("./controller/Routes.js")
 app.use(routers);
 
-// Handlebars. :o
+// Handlebars
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({
@@ -56,6 +56,3 @@ app.listen(PORT, function () {
 });
 
 
-// get the save note to work
-// delete database on scrape
-// gitnore
