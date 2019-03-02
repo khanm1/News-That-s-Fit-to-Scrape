@@ -1,6 +1,11 @@
 var app = require("express").Router();
 var db = require("../models");
 
+// Mohammad, you forgot to reference the request and cheerio in this routes.js
+// I think you had it in the server.js
+// Scraping tools
+var request = require("request");
+var cheerio = require("cheerio");
 // Routes
 // A GET route for scraping the Free Beacon website
 app.get("/scrape", function (req, res) {
@@ -8,6 +13,8 @@ app.get("/scrape", function (req, res) {
   request("http://freebeacon.com/columns/", function (error, response, html) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(html);
+// https://www.bostonglobe.com/
+// http://freebeacon.com/
     // Now, we grab every h2 within an article tag, and do the following:
     $("article").each(function (i, element) {
       // Save an empty result object
@@ -66,6 +73,20 @@ app.post("/articles/saved/:id", function (req, res) {
     });
 });
 
+
+//Mohammand, you need the route to delete the note
+app.delete("/delete/:id", (req, res) => {
+  console.log("id:"+ req.params.id );
+  db.Note.findOneAndRemove({ _id: req.params.id}, function(data){ 
+    res.send(data);
+
+  });
+ 
+
+
+});
+
+
 // Post request to delete an saved status on article
 app.post("/articles/delete/:id", function (req, res) {
   // Use the article id to find and update its saved boolean
@@ -89,12 +110,16 @@ app.post("/articles/delete/:id", function (req, res) {
 
 //GET request to go to savedArticles.handlebars and render saved articles
 app.get("/saved", function (req, res) {
+
+  //Mohammad, the populate should "note". this was wrong calling
   db.Article.find({
     "saved": true
-  }).populate("notes").exec(function (error, articles) {
+  }).populate("note").exec(function (error, articles) {
     var hbsObject = {
       article: articles
     };
+
+    console.log(articles);
     res.render("savedArticles", hbsObject);
   });
 });
@@ -140,3 +165,4 @@ app.get("/articles", function (req, res) {
     });
 });
 module.exports = app;
+
