@@ -7,9 +7,9 @@ Please Click on this [link]() to Check the App out.
 | Frontend  | Backend |
 | ------------- | ------------- |
 | HTML | Nodejs |
-| CSS (SASS) | Express |
+| CSS  | Express |
 | Javascript (jQuery) | MongoDB (Mongoose)|
-| Materialize | Cheerio (Web Scrapper) |
+| Bootstrap | Cheerio (Web Scrapper) |
 |Handlebars (Templating Engine)|
 
 
@@ -17,9 +17,7 @@ Deployed on: `Heroku`
 
 ## Usage
 
-- Click on the "Scrape" Add Icon at the Upper Right Hand Corner to Scrape News Articles from NPR News.
-
-- Click on Add Symbol on the Individual Articles to Store the Article in MongoDB.
+- Click on the "Scrape" Add Icon at the Upper Right Hand Corner to Scrape News Articles from.
 
 - Click on "Saved Articles" to bring up a List of Saved Articles.
 
