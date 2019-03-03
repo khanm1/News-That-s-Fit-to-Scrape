@@ -13,7 +13,7 @@ Please Click on this [link](https://github.com/khanm1/News-That-s-Fit-to-Scrape)
 |Handlebars (Templating Engine)|
 
 
-Deployed on: `Heroku`
+Deployed on: `Heroku` Please click on this link [link]( https://mohammadscrape.herokuapp.com/) to Check the App out.
 
 ## Usage
 
@@ -23,9 +23,9 @@ Deployed on: `Heroku`
 
 - Click on "Add a Note" to add your comments. 
 
-- Click on "Saved Articles" to bring up a List of Saved Articles.
+- Click on "Delete" to delet the Article..
 
-- Click on "Delete" to delet the Article.. 
+- Click on "Saved Articles" to bring up a List of Saved Articles.
 
 
 ## Requirements
