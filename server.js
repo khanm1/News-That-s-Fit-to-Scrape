@@ -4,9 +4,6 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var path = require("path");
 
-
-
-
 // Require all models
 var db = require("./models");
 
