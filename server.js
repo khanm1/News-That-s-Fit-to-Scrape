@@ -38,13 +38,9 @@ app.use(routers);
 
 // Handlebars
  
-
 var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-
-// Connect to the Mongo DB
-// mongoose.connect("mongodb://localhost/freeBeacon");
 
 
 // Start the server

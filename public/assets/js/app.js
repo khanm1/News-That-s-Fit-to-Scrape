@@ -10,7 +10,7 @@ $("#scrape").on("click", function () {
   })
 });
 
-//Mohammand, you need to have this onclick for note delete button
+//onclick for note delete button
 $(".deleteNote").on("click", function () {
   var thisId = $(this).attr("data-note-id");
    
@@ -24,7 +24,7 @@ $(".deleteNote").on("click", function () {
   })
 });
 
-//Mohammand,  you need to have add note button
+//add note button
 $(".addNote").on("click", function () {
  
   $.ajax({
@@ -72,7 +72,6 @@ $(document).on("click", ".saveNote", function () {
     url: "/notes/articles/" + thisId,
     data: {
 
-      //Mohammad, title and body was point to the wrong jquery inputs
       // Value taken from title input
       title: $(".modal-title").text().replace("Notes for ",""),
       // Value taken from note textarea
@@ -103,4 +102,4 @@ $.getJSON("/articles", function (data) {
   }
 });
 
-//
+

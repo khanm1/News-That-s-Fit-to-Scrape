@@ -6,8 +6,6 @@ var Schema = mongoose.Schema;
 // Using the Schema constructor, create a new NoteSchema object
 var NoteSchema = new Schema({
 
-  // Mohammad, your note schema was not correct. The below is the correct setup
-
   // `title` is of type String
   title: {type: String},
   // `body` is of type String
