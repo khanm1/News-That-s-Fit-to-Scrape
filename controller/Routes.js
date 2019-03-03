@@ -71,7 +71,7 @@ app.post("/articles/saved/:id", function (req, res) {
 });
 
 
-//delete the note
+//Delete the note
 app.delete("/delete/:id", (req, res) => {
   console.log("id:"+ req.params.id );
   db.Note.findOneAndRemove({ _id: req.params.id}, function(data){ 
