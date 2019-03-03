@@ -17,7 +17,7 @@ Deployed on: `Heroku`
 
 ## Usage
 
-- Click on the "Scrape" Add Icon at the Upper Right Hand Corner to Scrape News Articles from.
+- Click on the "Scrape" Add Icon at the Upper Right Hand Corner to Scrape News Articles from Free Beacon.
 
 - Click on "Saved Articles" to bring up a List of Saved Articles.
 
