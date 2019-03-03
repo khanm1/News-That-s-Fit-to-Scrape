@@ -19,11 +19,13 @@ Deployed on: `Heroku`
 
 - Click on the "Scrape" Add Icon at the Upper Right Hand Corner to Scrape News Articles from Free Beacon.
 
+- Click on "Saved Article" to the Save Article.
+
+- Click on "Add a Note" to add your comments. 
+
 - Click on "Saved Articles" to bring up a List of Saved Articles.
 
-- Click on the Article to Bring Up a Pop up Modal for Viewing and Submitting Comments Pertaining to the Article.
-
-- Click on the "Trash" Icon / Delete to Delete the Article / Comment.
+- Click on "Delete" to delet the Article.. 
 
 
 ## Requirements
